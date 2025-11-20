@@ -15,7 +15,7 @@ class _ExpensesAppState extends State<ExpensesApp> {
       amount: 5,
       date: DateTime.now(),
       title: 'Burger',
-      category: Category.food,
+      category: Category.work,
     ),
 
     Expense(
