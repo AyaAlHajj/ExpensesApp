@@ -1,7 +1,6 @@
 import 'package:expense_tracker/expense_app.dart';
 import 'package:flutter/material.dart';
 
-
 void main() {
   runApp(const MainApp());
 }
@@ -11,12 +10,15 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Center(
-          child: ExpensesApp(),
+        appBar: AppBar(
+          title: Text("Expense Tracker"),
+          actions: [IconButton(onPressed: () {}, icon: Icon(Icons.add))],
         ),
+
+        body: Center(child: ExpensesApp()),
       ),
     );
   }
